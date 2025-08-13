@@ -1,0 +1,196 @@
+ed{
+    display: flex;
+    margin-left:180px;
+    padding: 50px;
+    letter-spacing: 0.28em;
+    font-size: 20px;
+    color: #e7a85e; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edu {
+    position: relative;
+    color: #e8e8e8;
+    padding: 56px 24px 80px 72px;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    margin-left: 30%;
+    }
+    
+    
+ .edu::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 190px;
+    bottom: 120px;
+    width: 2px;
+    background: #2a2a2a;
+    }
+    
+clg, school, clg1, school1, deg, year {
+    display: block;
+    }
+   
+clg, school {
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 56px;
+    }
+    
+clg::before,
+    school::before {
+    content: "";
+    position: absolute;
+    left: -44px; 
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: #ffd27a; 
+    border: 3px solid #1b1b1b; 
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #2a2a2a; 
+}
+    
+   
+clg1, school1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+    }
+    
+   
+deg {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d8d8d8;
+    margin-bottom: 10px;
+    }
+    
+    
+year {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    }
+    
+   
+clg p,
+school p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #c7c7c7;
+    margin: 14px 0 0;
+    max-width: 720px;
+    }
+    
+    
+    school { margin-top: 22px; }
+    
+    
+@media (max-width: 900px) {
+    ed {
+      margin-left: 40px;
+      padding: 30px 20px;
+      font-size: 18px;
+    }
+  
+    .edu {
+      margin-left: 0;
+      padding: 40px 20px 60px 50px;
+    }
+  
+    .edu::before {
+      left: 15px;
+      top: 150px;
+      bottom: 80px;
+    }
+  
+    clg1, school1 {
+      font-size: 20px;
+    }
+  
+    deg {
+      font-size: 18px;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    ed {
+      margin-left: 100px;
+      padding: 20px;
+      font-size: 16px;
+      letter-spacing: 0.15em;
+    }
+  
+    .edu {
+      padding: 30px 15px 50px 40px;
+      margin: 20px;
+    }
+  
+    .edu::before {
+      left: 4px;
+      top: 100px;
+      bottom: 60px;
+    }
+  
+    clg1, school1 {
+      font-size: 18px;
+    }
+  
+    deg {
+      font-size: 16px;
+    }
+  
+    year {
+      font-size: 11px;
+    }
+  
+    clg p,
+    school p {
+      font-size: 14px;
+    }
+  }
+  
+ed {
+  animation: eduTitleFade 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.edu {
+  animation: eduTimelineFade 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+clg1, school1, deg, year, clg p, school p {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+clg:hover, school:hover {
+  transform: translateX(5px);
+}
+
+clg:hover::before,
+school:hover::before {
+  box-shadow: 0 0 8px rgba(255, 210, 122, 0.8);
+}
+
+@keyframes eduTitleFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes eduTimelineFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
