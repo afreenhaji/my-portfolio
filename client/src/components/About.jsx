@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from "../assets/img.png";
-import "../styles/ABOUT.css";
+import "../styles/About.css";
 import { FaGithub } from "react-icons/fa6";
 import { SiLinkedin } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
