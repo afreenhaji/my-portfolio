@@ -16,8 +16,8 @@ function Project() {
       img: port,
       year: "2025",
       description: "Developed a dark-themed, responsive React portfolio to showcase skills, projects, and achievements with smooth transitions and modern UI design.",
-      live: "#",
-      git: "#",
+      live: "https://afreen-my-portfolio.netlify.app/",
+      git: "https://github.com/afreenhaji/my-portfolio",
     },
   ];
 
